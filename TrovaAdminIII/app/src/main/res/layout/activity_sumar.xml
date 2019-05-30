@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.trovaUser.view.SumarActivity"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:background="@color/gray">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="175dp"
+                android:id="@+id/image_button_agregar"/>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NOMBRE: "
+                android:textColor="@color/white"
+                android:layout_marginTop="15dp"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:id="@+id/et_nom_agregar"
+                android:background="@drawable/bg_edittext"
+                android:layout_marginBottom="5dp"/>
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DIRECCION: "
+                android:textColor="@color/white"
+                android:layout_marginTop="15dp"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:id="@+id/et_dir_agregar"
+                android:background="@drawable/bg_edittext"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CONTACTO: "
+                android:layout_marginBottom="5dp"
+                android:textColor="@color/white"
+                android:layout_marginTop="15dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:id="@+id/et_contacto_agregar"
+                android:background="@drawable/bg_edittext"
+                android:text=" "/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PRECIO: "
+                android:textColor="@color/white"
+                android:layout_marginTop="15dp"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:id="@+id/et_precio_agregar"
+                android:background="@drawable/bg_edittext"
+                android:layout_marginBottom="5dp"
+                android:inputType="number"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FACEBOOK: "
+                android:textColor="@color/white"
+                android:layout_marginTop="15dp"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:id="@+id/et_facebook_agregar"
+                android:background="@drawable/bg_edittext"
+                android:layout_marginBottom="5dp"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FACEBOOK ID: "
+                android:textColor="@color/white"
+                android:layout_marginTop="15dp"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:id="@+id/et_facebook_id_agregar"
+                android:background="@drawable/bg_edittext"
+                android:layout_marginBottom="5dp"
+
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="INSTAGRAM: "
+                android:textColor="@color/white"
+                android:layout_marginTop="15dp"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:id="@+id/et_instagram_agregar"
+                android:background="@drawable/bg_edittext"
+                android:layout_marginBottom="5dp"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="WHATSAPP: "
+                android:textColor="@color/white"
+                android:layout_marginTop="15dp"/>
+
+            <EditText
+                android:id="@+id/et_whatsapp_agregar"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@drawable/bg_edittext"
+                android:layout_marginBottom="5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PROMOCION: "
+                android:textColor="@color/white"
+                android:layout_marginTop="15dp"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:id="@+id/et_promo_agregar"
+                android:background="@drawable/bg_edittext"
+                android:text=""
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LATITUD: "
+                android:textColor="@color/white"
+                android:layout_marginTop="15dp"/>
+
+            <EditText
+                android:id="@+id/et_latitud_agregar"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@drawable/bg_edittext"
+               />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LONGITUD: "
+                android:textColor="@color/white"
+                android:layout_marginTop="15dp"/>
+
+            <EditText
+                android:id="@+id/et_longitud_agregar"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@drawable/bg_edittext"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="HORARIO:"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/white"
+                />
+
+            <EditText
+                android:id="@+id/et_horario_agregar"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@drawable/bg_edittext"
+                android:text="HORARIOS DE ATENCION DE LUNES A VIERNES DE 8 A 12 HS Y 17 A 21 HS"
+               />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="70dp"
+                android:textColor="@color/white"
+                android:layout_marginTop="15dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="DE: "
+                    android:id="@+id/agregar_txt_view_horario"
+                    android:textColor="@color/white"
+                    />
+
+                <EditText
+                    android:layout_width="50dp"
+                    android:layout_height="35dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/agregar_txt_view_horario"
+                    android:id="@+id/et_hora1"
+                    android:background="@drawable/bg_edittext"
+                    android:inputType="number"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="hs  A: "
+                    android:layout_toRightOf="@+id/et_hora1"
+                    android:layout_marginLeft="2dp"
+                    android:id="@+id/agregar_txt_a"
+                    android:textColor="@color/white"/>
+
+                <EditText
+                    android:layout_width="50dp"
+                    android:layout_height="35dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/agregar_txt_a"
+                    android:id="@+id/et_hora2"
+                    android:background="@drawable/bg_edittext"
+                    android:inputType="number"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="hs"
+                    android:layout_toRightOf="@+id/et_hora2"
+                    android:layout_marginLeft="2dp"
+                    android:id="@+id/agregar_txt_hs1"
+                    android:textColor="@color/white"/>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70dp"
+                android:layout_marginBottom="2dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="DE: "
+                    android:id="@+id/agregar_txt_view_horario2"
+                    android:textColor="@color/white"
+                    />
+
+                <EditText
+                    android:layout_width="50dp"
+                    android:layout_height="35dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/agregar_txt_view_horario2"
+                    android:id="@+id/et_hora3"
+                    android:background="@drawable/bg_edittext"
+                    android:inputType="number"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="hs  A: "
+                    android:layout_toRightOf="@+id/et_hora3"
+                    android:layout_marginLeft="2dp"
+                    android:id="@+id/agregar_txt_a2"
+                    android:textColor="@color/white"/>
+
+                <EditText
+                    android:layout_width="50dp"
+                    android:layout_height="35dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/agregar_txt_a2"
+                    android:id="@+id/et_hora4"
+                    android:background="@drawable/bg_edittext"
+                    android:inputType="number"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="hs"
+                    android:layout_toRightOf="@+id/et_hora4"
+                    android:layout_marginLeft="2dp"
+                    android:id="@+id/agregar_txt_hs2"
+                    android:textColor="@color/white"/>
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="20dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="20dp">
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="LUN"
+                        android:id="@+id/cb_lun"
+                        android:textColor="@color/white"/>
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="MIE"
+                        android:id="@+id/cb_mie"
+                        android:textColor="@color/white"
+                        android:checked="true"/>
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="VIE"
+                        android:id="@+id/cb_vie"
+                        android:textColor="@color/white"
+                        android:checked="true"/>
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="DOM"
+                        android:id="@+id/cb_dom"
+                        android:textColor="@color/white"
+                        android:checked="true"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="15dp">
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="MAR"
+                        android:id="@+id/cb_mar"
+                        android:textColor="@color/white"
+                        android:checked="true"/>
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="JUE"
+                        android:id="@+id/cb_jue"
+                        android:textColor="@color/white"
+                        android:checked="true"/>
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SAB"
+                        android:id="@+id/cb_sab"
+                        android:textColor="@color/white"
+                        android:checked="true"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp">
+
+
+                <Button
+                    android:layout_width="200dp"
+                    android:layout_height="75dp"
+                    android:text="ENTER"
+                    android:id="@+id/btn_agregar_enter"
+                    android:layout_centerHorizontal="true"
+                    android:onClick="onClickEnter"/>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:background="#1A1A1A"
+
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="15dp"
+        android:id="@+id/linear_layout_celda"
+        >
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="NOMBRE DE PELUQUERIA"
+        android:id="@+id/txt_view_nom"
+        android:textColor=" #999999"
+        android:fontFamily="@font/arial_"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/linear_layout_celda_texto_medio"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DISTANCIA: "
+                android:id="@+id/txt_view_distance_izq"
+                android:textColor=" #999999"
+                android:fontFamily="@font/century_gothic"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="850"
+                android:id="@+id/txt_view_distance"
+                android:textColor="#e5e5e5"
+                android:textSize="15dp"
+                android:fontFamily="@font/century_gothic"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="METROS"
+                android:id="@+id/txt_view_distance_drch"
+                android:layout_marginLeft="5dp"
+                android:textColor=" #999999"
+                android:fontFamily="@font/century_gothic"/>
+
+            <ProgressBar
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/progress_bar_celda"
+                android:layout_marginLeft="5dp"
+                />
+
+        </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DIRECCION"
+        android:id="@+id/txt_view_dir"
+        android:layout_marginRight="50dp"
+        android:textColor=" #999999"
+        android:fontFamily="@font/century_gothic"/>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/separador_abajo"
+        app:layout_anchor="@id/linear_layout_celda"
+        app:layout_anchorGravity="bottom|end"/>
+
+    <ImageView
+        android:id="@+id/image_estrella_negra"
+        android:layout_width="45dp"
+        android:layout_height="35dp"
+        android:background="@drawable/estrella_negra"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="15dp"
+        app:layout_anchor="@id/linear_layout_celda"
+        app:layout_anchorGravity="bottom|right"
+       />
+
+    <ImageView
+        android:id="@+id/image_estrella_marcada"
+        android:layout_width="45dp"
+        android:layout_height="35dp"
+        android:background="@drawable/estrella_marcada"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="15dp"
+        app:layout_anchor="@id/linear_layout_celda"
+        app:layout_anchorGravity="bottom|right"/>
+
+
+
+</android.support.design.widget.CoordinatorLayout>

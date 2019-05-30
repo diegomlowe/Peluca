@@ -1,0 +1,316 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1A1A1A"
+    android:padding="5dp">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/cl_detalle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/linear_layout_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical"
+
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp">
+
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/icon_tel"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/image_view_contacto_detail"/>
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center_vertical"
+                    android:text="CONTACTO:"
+                    android:textColor=" #999999"
+                    android:textSize="12dp"
+                    android:id="@+id/txt_view_contacto_detail"
+                    android:layout_toRightOf="@+id/image_view_contacto_detail"
+                    android:fontFamily="@font/century_gothic"/>
+
+                <TextView
+                    android:id="@+id/txt_detalle_pelu_contacto"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center_vertical"
+                    android:text="47997191"
+                    android:textColor="#e5e5e5"
+                    android:textSize="20dp"
+                    android:layout_toRightOf="@+id/txt_view_contacto_detail"
+                    android:fontFamily="@font/century_gothic"/>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal"
+                >
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/icon_precio"
+                    android:id="@+id/image_view_precio_detail"
+                    android:layout_centerVertical="true"
+                    />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical"
+                    android:text="CORTE:"
+                    android:textColor=" #999999"
+                    android:textSize="12dp"
+                    android:layout_toRightOf="@+id/image_view_precio_detail"
+                    android:id="@+id/txt_view_precio_detail"
+                    android:fontFamily="@font/century_gothic"
+                   />
+
+                <TextView
+                    android:id="@+id/txt_detalle_pelu_precio"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center_vertical"
+                    android:text="$130"
+                    android:textColor="#e5e5e5"
+                    android:textSize="20dp"
+                    android:layout_toRightOf="@+id/txt_view_precio_detail"
+                    android:fontFamily="@font/century_gothic"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/icono_dir"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/image_view_ubicacion_detail"/>
+
+                <TextView
+                    android:id="@+id/txt_detalle_pelu_dir"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical"
+                    android:text="SALTA 839"
+                    android:textColor="#e5e5e5"
+                    android:textSize="15dp"
+                    android:layout_toRightOf="@+id/image_view_ubicacion_detail"
+                    android:fontFamily="@font/century_gothic"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/separador_arriba"
+            app:layout_anchor="@id/linear_layout_data"
+            app:layout_anchorGravity="top" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/separador_abajo"
+            app:layout_anchor="@id/linear_layout_data"
+            app:layout_anchorGravity="bottom|end" />
+
+        <ImageView
+            android:id="@+id/image_estrella_negra_detalle"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/estrella_negra"
+            app:layout_anchor="@+id/linear_layout_data"
+            app:layout_anchorGravity="top|right" />
+
+        <ImageView
+            android:id="@+id/image_estrella_marcada_detalle"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/estrella_marcada"
+            app:layout_anchor="@+id/linear_layout_data"
+            app:layout_anchorGravity="top|right" />
+
+    </android.support.design.widget.CoordinatorLayout>
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/coordinatorLayout_detalle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cl_detalle">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cl_detalle">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EN ESTE MOMENTO SE ENCUENTRA "
+            android:textColor=" #999999"
+            android:textSize="10dp"
+            android:fontFamily="@font/bookman_old_style"
+
+            />
+
+
+        <TextView
+            android:id="@+id/txt_detalle_pelu_abierto_cerrado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CERRADO"
+            android:textSize="55dp"
+            android:fontFamily="@font/bookosb"
+            />
+
+        <TextView
+            android:id="@+id/txt_detalle_pelu_horarios"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="HORARIOS DE ATENCION DE LUNES A VIERNES DE 8HS A 14HS / 18HS A 22HS"
+            android:textColor="#999999"
+            android:textSize="12dp"
+            android:fontFamily="@font/century_gothic"
+            />
+
+        <LinearLayout
+
+            android:id="@+id/linear_layout_buttom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btn_insta"
+                android:layout_width="55dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/icono_instagram" />
+
+            <ImageButton
+                android:id="@+id/btn_fb"
+                android:layout_width="55dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/icono_fb" />
+
+            <ImageButton
+                android:id="@+id/btn_wp"
+                android:layout_width="55dp"
+                android:layout_height="50dp"
+                android:background="@drawable/icono_whatsapp"
+
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txt_view_redes2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="¿NO ESTAS SEGUR@?"
+            android:textColor=" #999999"
+            android:textSize="10dp"
+            android:fontFamily="@font/bookman_old_style"
+            android:layout_marginTop="5dp"
+            />
+
+        <TextView
+            android:id="@+id/txt_view_redes1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="MIRA SUS TRABAJOS EN LAS REDES SOCIALES"
+            android:textColor=" #999999"
+            android:textSize="10dp"
+            android:fontFamily="@font/bookman_old_style"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/imageView_abajito"
+        android:background="@drawable/separador_abajo"
+        app:layout_anchor="@+id/linearLayout"
+        app:layout_anchorGravity="bottom|end" />
+
+
+
+    </android.support.design.widget.CoordinatorLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SADF32435G"
+        android:gravity="center"
+        android:id="@+id/text_view_peluca_id_detalle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/coordinatorLayout_detalle"
+        android:textColor=" #999999"
+        />
+
+
+</android.support.constraint.ConstraintLayout>
+

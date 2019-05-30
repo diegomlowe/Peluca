@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout15"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1A1A1A"
+    tools:context="com.trovaUser.view.DetailActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical">
+
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <android.support.design.widget.CoordinatorLayout
+            android:id="@+id/coordinaor_layout_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true">
+
+
+            <ImageView
+                android:id="@+id/image_promo"
+                android:layout_width="match_parent"
+                android:layout_height="200dp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/degrade_fotos" />
+
+            <ProgressBar
+                android:id="@+id/progress_bar"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:visibility="visible"
+                app:layout_anchor="@id/image_promo"
+                app:layout_anchorGravity="center" />
+
+
+            <ImageButton
+                android:id="@+id/maps_btn"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginRight="11dp"
+                android:layout_marginBottom="35dp"
+                android:background="@drawable/icono_como_llegar"
+                android:onClick="onClickMaps"
+                android:scaleType="fitXY"
+                app:layout_anchor="@id/image_promo"
+                app:layout_anchorGravity="bottom|end" />
+
+            <TextView
+                android:id="@+id/txt_toolbar_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="MI ESTILO"
+                android:textColor="#e5e5e5"
+                android:textSize="25dp"
+                app:layout_anchor="@id/image_promo"
+                app:layout_anchorGravity="bottom"
+                android:fontFamily="@font/berlin_sanz_fb_demi"/>
+
+
+        </android.support.design.widget.CoordinatorLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_layout_detail_ubicacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/coordinaor_layout_detail"
+            android:layout_marginLeft="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SE ENCUENTRA A"
+                android:textColor=" #999999"
+                android:textSize="10dp"
+                tools:fontFamily="@font/arial_" />
+
+            <TextView
+                android:id="@+id/txt_detail_activity_distancia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:text="350"
+                android:textColor="#e5e5e5"
+                android:textSize="12dp"
+                tools:fontFamily="@font/arial_" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="METROS "
+                android:textColor=" #999999"
+                android:textSize="10dp"
+                tools:fontFamily="@font/arial_" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_layout_detail_rank"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linear_layout_detail_ubicacion"
+            android:layout_marginLeft="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt_detail_activity_rank"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:layout_marginRight="5dp"
+                android:text="35"
+                android:textColor="#e5e5e5"
+                tools:fontFamily="@font/arial_" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PERSONAS LA PREFIEREN "
+                android:textColor=" #999999"
+                android:textSize="10dp"
+                tools:fontFamily="@font/arial_"  />
+
+        </LinearLayout>
+
+
+        <FrameLayout
+            android:id="@+id/frame_second"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/linear_layout_detail_rank">
+
+        </FrameLayout>
+
+
+    </RelativeLayout>
+
+    </ScrollView>
+
+
+</android.support.constraint.ConstraintLayout>

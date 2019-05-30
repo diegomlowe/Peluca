@@ -1,0 +1,79 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="#1A1A1A"
+    android:padding="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="225dp"
+        android:background="@drawable/fondo_promocion"
+        android:padding="5dp"
+        android:orientation="vertical"
+        android:id="@+id/linear_layout_promo"
+        >
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="¡PROMOCION!"
+            android:textSize="40dp"
+            android:gravity="center"
+            android:textColor="#e5e5e5"
+            android:fontFamily="@font/berlin_sanz_fb_demi"
+            />
+
+        <TextView
+            android:id="@+id/txt_detalle_promo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SI 3 AMIGOS TUYOS SE CORTAN EL PELO, TU CORTE QUEDA GRATIS"
+            android:gravity="center"
+            android:textColor="#e5e5e5"
+            android:textSize="25dp"
+            android:fontFamily="@font/century_gothic"
+            />
+
+
+    </LinearLayout>
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="IR A LA DESCRIPCION"
+        android:textSize="15dp"
+        android:gravity="center"
+        android:textColor="#e5e5e5"
+        android:paddingTop="10dp"
+        android:id="@+id/txt_view_ir_descripcion"
+        android:layout_below="@+id/linear_layout_promo"
+        />
+
+
+    <ImageButton
+        android:id="@+id/btn_local"
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:paddingTop="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/txt_view_ir_descripcion"
+        android:background="@drawable/flecha_volver"
+
+        />
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
+
+
